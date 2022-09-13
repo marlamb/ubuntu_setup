@@ -1,0 +1,18 @@
+alias vi="nvim"
+alias vim="nvim"
+alias nano="nvim"
+alias emacs="nvim"
+
+export CONAN_COLOR_DARK=1
+
+alias bat="batcat"
+export BAT_THEME="Solarized (light)"
+
+export FZF_DEFAULT_COMMAND='find .'
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh
+[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
+
