@@ -10,9 +10,6 @@ install apt tmux
 install apt ncurses-term
 
 TMUX_PLUGINS_HOME=${HOME}/.tmux/plugins
-echo ${HOME}
-echo ${TMUX_PLUGINS_HOME}
-exit 0
 if [ ! -d "${TMUX_PLUGINS_HOME}" ]; then
     mkdir -p ${TMUX_PLUGINS_HOME}
     git clone https://github.com/tmux-plugins/tpm ${TMUX_PLUGINS_HOME}/tpm
