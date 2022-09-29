@@ -3,7 +3,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Plugins (specific to vim-plug):
 "     Install: ':PlugInstall'
-"     Remove unused: 'PlugClean'
+"     Remove unused: ':PlugClean'
 "
 " Language Server
 "     Information on currently running server: ':LspStatus'

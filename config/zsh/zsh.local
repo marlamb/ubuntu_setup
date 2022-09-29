@@ -8,8 +8,7 @@ export CONAN_COLOR_DARK=1
 alias bat="batcat"
 export BAT_THEME="Solarized (light)"
 
-export FZF_DEFAULT_COMMAND='find .'
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_OPTS="--layout=reverse --border --preview 'batcat --style=numbers --color=always {}'"
 
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
