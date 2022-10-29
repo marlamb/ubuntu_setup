@@ -41,6 +41,12 @@ else
     mv /tmp/newfile ${HOME}/.zshrc
 fi
 
+echo -e "\n\n Installing zsh-autosuggestions...\n"
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+echo -e "\n\n Settings zsh plugins...\n"
+sed -i 's/^plugins=\(.*\)$/plugins=(git zsh-autosuggestions)/' ${HOME}/.zshrc
+
 if grep -Fqx "source ~/.zsh.local" ${HOME}/.zshrc
 then
     echo -e "\nSourcing of .zsh.local is already present. No action required."

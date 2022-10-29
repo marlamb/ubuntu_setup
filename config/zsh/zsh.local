@@ -5,6 +5,10 @@ alias emacs="nvim"
 
 export CONAN_COLOR_DARK=1
 
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#c6c6c6"
+ZSH_AUTOSUGGEST_STRATEGY="match_prev_cmd"
+bindkey '^ ' autosuggest-accept
+
 alias bat="batcat"
 export BAT_THEME="Solarized (light)"
 
