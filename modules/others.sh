@@ -10,6 +10,7 @@ echo -e "\n\nUpdate apt...\n"
 sudo apt update
 sudo apt full-upgrade
 
+install apt git-lfs
 install apt curl
 install apt software-properties-common
 install apt thunderbird
@@ -21,6 +22,7 @@ install apt tree
 install apt meld
 install apt fzf
 install apt filezilla
+install apt virtualenv
 
 echo -e "\n\n Setting Eurkey keyboard layout...\n"
 echo -e "Actual setting is currently commented out - check if it works also without additional steps!"
